@@ -36,14 +36,18 @@
     <div id="app"></div>
 
     <script>
-        // Регистрация Service Worker
+        // Регистрация Service Worker с явным указанием пути и Scope
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/draft-app/sw.js')
-                    .then(reg => console.log('Service Worker зарегистрирован'))
+                // Путь: /имя_репозитория/sw.js
+                // Scope: /имя_репозитория/ (область контроля PWA)
+                navigator.serviceWorker.register('/draft-app/sw.js', { scope: '/draft-app/' })
+                    .then(reg => console.log('Service Worker зарегистрирован. Scope:', reg.scope))
                     .catch(err => console.log('Ошибка Service Worker:', err));
             });
         }
+    </script>
+</body>
 
         const vocabulary = [
             { q: 'Bom dia!', a: 'Доброе утро!' },
@@ -350,5 +354,6 @@
 </body>
 
 </html>
+
 
 
