@@ -2,7 +2,7 @@
   "name": "Portuguese Learning - Изучай португальский",
   "short_name": "Português",
   "description": "Изучай португальский язык в игровой форме",
-  "start_url": "/",
+  "start_url": "/draft-app/",
   "display": "standalone",
   "background_color": "#6366F1",
   "theme_color": "#6366F1",
@@ -24,4 +24,5 @@
   "categories": ["education", "games"],
   "lang": "ru-RU",
   "dir": "ltr"
+
 }
