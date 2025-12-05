@@ -41,8 +41,8 @@
             window.addEventListener('load', () => {
                 // Путь: /имя_репозитория/sw.js
                 // Scope: /имя_репозитория/ (область контроля PWA)
-                navigator.serviceWorker.register('/draft-app/sw.js', { scope: '/draft-app/' })
-                    .then(reg => console.log('Service Worker зарегистрирован. Scope:', reg.scope))
+              navigator.serviceWorker.register('/draft-app/sw.js')
+                    .then(reg => console.log('Service Worker зарегистрирован'))
                     .catch(err => console.log('Ошибка Service Worker:', err));
             });
         }
@@ -354,6 +354,7 @@
 </body>
 
 </html>
+
 
 
 
