@@ -12,11 +12,11 @@
     <title>Portuguese Learning - Изучай португальский</title>
     
     <!-- Web App Manifest -->
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="/draft-app/manifest.json">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
-    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/draft-app/icon-192.png">
+    <link rel="apple-touch-icon" href="/draft-app/icon-192.png">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -39,7 +39,7 @@
         // Регистрация Service Worker
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
+                navigator.serviceWorker.register('/draft-app/sw.js')
                     .then(reg => console.log('Service Worker зарегистрирован'))
                     .catch(err => console.log('Ошибка Service Worker:', err));
             });
@@ -350,4 +350,5 @@
 </body>
 
 </html>
+
 
