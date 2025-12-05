@@ -1,10 +1,10 @@
 const CACHE_NAME = 'portuguese-app-v1';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/icon-192.png',
-  '/icon-512.png'
+  '/draft-app/',
+  '/draft-app/index.html',
+  '/draft-app/manifest.json',
+  '/draft-app/icon-192.png',
+  '/draft-app/icon-512.png'
 ];
 
 self.addEventListener('install', (event) => {
@@ -33,4 +33,5 @@ self.addEventListener('activate', (event) => {
       );
     })
   );
+
 });
