@@ -39,7 +39,7 @@
         // Регистрация Service Worker
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/draft-app/sw.js', { scope: '/draft-app/' })
+                navigator.serviceWorker.register('/draft-app/sw.js')
                     .then(reg => console.log('Service Worker зарегистрирован'))
                     .catch(err => console.log('Ошибка Service Worker:', err));
             });
@@ -350,5 +350,6 @@
 </body>
 
 </html>
+
 
 
